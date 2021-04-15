@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str='c';
+    let Upper="The Quick Brown Fox";
+    let Lower="tHE qUICK bROWN fOX";
+    let result=[];
+    for(let x=0;x<str.length;x++)
+    {
+        if(Upper.indexOf(str[x]) !==-1)
+        {
+            result.push(str[x].toLowerCase());
+        }
+        else if(Lower.indexOf(str[x]) !==-1)
+        {
+            result.push(str[x].toUpperCase());
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+</script>
+</body>
+</html>
